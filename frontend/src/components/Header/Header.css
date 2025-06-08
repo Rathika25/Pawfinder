@@ -1,11 +1,9 @@
-
 body {
-  margin: 10px  20px;
+  margin: 10px 20px;
   padding: 10px 20px;
   background-color: #454626;
   font-family: 'Segoe UI', sans-serif;
 }
-
 
 .signup-button {
   position: absolute;
@@ -20,57 +18,65 @@ body {
   border: none;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.10s smooth ;
+  transition: 0.10s smooth;
 }
 
 .signup-button button:hover {
   background-color: #ddd;
 }
 
-
+/* Fullscreen Header */
 .header {
   width: 100%;
-  max-width: 1200px;
-  margin-top: 30px;
-  background: url('/header_img.png') no-repeat center;
+  height: 100vh;
+  background: url('/header_img.png') no-repeat center center;
   background-size: cover;
-  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  
-  
-  
-  
 }
+
+
 .heading {
   text-align: center;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
-
-  
   margin-top: 10px;
-  margin-bottom:0px;
+  margin-bottom: 0;
 }
-
 
 
 .header-contents {
   text-align: center;
   color: white;
-  margin-top: 300px;
-  font-size: smaller;
-  left: 50%;
-  transform:translate(-50%);
-  
+  transform: translateY(-10%);
 }
 
 .header-contents h2 {
-  font-size:16px;
+  font-size: 2.5rem;
   margin-bottom: 10px;
-  margin-left: 600px;
-  margin-right: -100px;
-  text-align: center;
 }
+
+
+.header-contents button {
+  background-color: #f3d250;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header-contents button:hover {
+  background-color: #ffcc50;
+}
+
 
 .modal-overlay {
   position: fixed;
@@ -85,6 +91,7 @@ body {
   z-index: 1000;
 }
 
+/* Login Modal */
 .login-modal {
   background-color: white;
   padding: 20px 24px;
@@ -179,19 +186,13 @@ body {
   font-size: 13px;
   margin: 8px 0;
 }
-.header-contents button {
-  background-color: #f3d250;
-  color: #333;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: 0.7s;
-  box-sizing: border-box;
-}
+@media (max-width: 768px) {
+  .header-contents h2 {
+    font-size: 1.8rem;
+  }
 
-.header-contents button:hover {
-  background-color: #ffcc50;
+  .header-contents button {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
 }
