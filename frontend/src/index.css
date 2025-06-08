@@ -1,0 +1,30 @@
+*{
+  padding:5px;
+  margin:0;
+  box-sizing:border-box;
+  font-family:'Outfit';
+  scroll-behavior: smooth;
+}
+
+body{
+  min-width: 100vh;
+  font-size: 1.8rem;
+  
+}
+
+
+
+.app{
+  width: 100%;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  
+  margin: 0 auto;
+}
+
+
+
+.content {
+  flex: 1; 
+}

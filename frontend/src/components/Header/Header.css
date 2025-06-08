@@ -1,0 +1,190 @@
+
+body {
+  margin: 10px  20px;
+  padding: 10px 20px;
+  background-color: #454626;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.signup-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.signup-button button {
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.10s smooth ;
+}
+
+.signup-button button:hover {
+  background-color: #ddd;
+}
+
+
+.header {
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 30px;
+  background: url('/header_img.png') no-repeat center;
+  background-size: cover;
+  height: 300px;
+  
+  
+  
+}
+.heading {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+
+  
+  margin-top: 10px;
+  margin-bottom:0px;
+}
+
+
+
+.header-contents {
+  text-align: center;
+  color: white;
+  margin-top: 300px;
+  font-size: smaller;
+  
+}
+
+.header-contents h2 {
+  font-size:16px;
+  margin-bottom: 10px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.login-modal {
+  background-color: white;
+  padding: 20px 24px;
+  border-radius: 12px;
+  width: 240px;
+  max-width: 90%;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.login-modal h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.login-modal input {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-modal button {
+  width: 100%;
+  padding: 8px;
+  background-color: #f3d250;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.login-modal button:hover {
+  background-color: #ffc107;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #000;
+}
+
+.login-text {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #444;
+}
+
+.login-link {
+  color: #007bff;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.success-msg {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.welcome-msg {
+  font-size: 13px;
+  margin: 8px 0;
+}
+.header-contents button {
+  background-color: #f3d250;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.7s;
+  box-sizing: border-box;
+}
+
+.header-contents button:hover {
+  background-color: #ffcc50;
+}
