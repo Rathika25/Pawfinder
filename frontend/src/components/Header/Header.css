@@ -9,7 +9,7 @@ body {
 
 .signup-button {
   position: absolute;
-  top: 20px;
+  bottom: 350px;
   right: 30px;
 }
 
@@ -34,9 +34,9 @@ body {
   margin-top: 30px;
   background: url('/header_img.png') no-repeat center;
   background-size: cover;
-  height: 50vh;
+  height: 70vh;
   position: relative;
-  border-radius: 14px;
+  
   
   
   
@@ -67,6 +67,9 @@ body {
 .header-contents h2 {
   font-size:16px;
   margin-bottom: 10px;
+  margin-left: 600px;
+  margin-right: -100px;
+  text-align: center;
 }
 
 .modal-overlay {
