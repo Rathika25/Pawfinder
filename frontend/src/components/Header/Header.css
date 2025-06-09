@@ -9,16 +9,17 @@ body {
 
 .signup-button {
   position: absolute;
-  bottom: 350px;
+  top: 30px;
   right: 30px;
 }
 
 .signup-button button {
   background-color: white;
-  padding: 8px 16px;
+  padding: 10px 18px;
   border-radius: 8px;
   border: none;
   font-weight: bold;
+  font-size: 14px;
   cursor: pointer;
   transition: 0.10s smooth ;
 }
@@ -31,11 +32,13 @@ body {
 .header {
   width: 100%;
   max-width: 1200px;
-  margin-top: 30px;
+  margin: 30px auto;
   background: url('/header_img.png') no-repeat center;
   background-size: cover;
   height: 70vh;
   position: relative;
+  border-radius: 14px;
+  overflow:hidden;
   
   
   
@@ -55,21 +58,20 @@ body {
 
 
 .header-contents {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
   text-align: center;
   color: white;
   margin-top: 300px;
-  font-size: smaller;
-  left: 50%;
-  transform:translate(-50%);
+  
   
 }
 
 .header-contents h2 {
-  font-size:16px;
-  margin-bottom: 10px;
-  margin-left: 600px;
-  margin-right: -100px;
-  text-align: center;
+  font-size:22px;
+  margin-bottom: 16px;
+  margin: 0;
 }
 
 .modal-overlay {
