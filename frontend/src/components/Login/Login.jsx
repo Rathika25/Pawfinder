@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';
+import {Link} from 'react-router-dom';
 
 const Login = () => {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -34,7 +35,8 @@ const Login = () => {
               <button type="submit">Login</button>
             </form>
             <p className="login-text">
-              Don’t have an account? <span className="login-link" onClick={() => window.location.href = '/signup'}>Sign Up</span>
+              Don’t have an account? 
+              <Link className="login-link" to="/signup">Sign Up</Link>
             </p>
           </>
         ) : (

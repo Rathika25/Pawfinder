@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './SignUp.css';
+import {Link} from 'react-router-dom';
 
 
 const SignUp = () => {
@@ -44,7 +45,7 @@ const SignUp = () => {
             </form>
             <p className="login-text">
               Already have an account?
-              <span className="login-link" onClick={() => window.location.href = '/login'}>Log In</span>
+              <Link className="login-link" to="/login">Log In</Link>
             </p>
           </>
         ) : (
