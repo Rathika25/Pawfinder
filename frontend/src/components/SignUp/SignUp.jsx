@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './SignUp.css';
-<Link to="/login">Login</Link>
+
 
 const SignUp = () => {
   const [signedUp, setSignedUp] = useState(false);
